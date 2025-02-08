@@ -9,7 +9,7 @@ O gerenciamento de competições esportivas tem evoluído significativamente com
 
 O objetivo deste projeto é desenvolver o Football Manager, um sistema eficiente para o gerenciamento de competições esportivas, permitindo a criação e administração de ligas nos formatos mata-mata, pontos corridos e fase de grupos. O sistema visa automatizar processos, oferecer uma interface intuitiva e fornecer maior controle sobre clubes, atletas e formatos de competição, garantindo transparência, acessibilidade e confiabilidade na gestão dos torneios. 
 
-## O que será desenvolvido? 
+## Tecnologias 
 
 Nesse projeto optamos por utilizar a linguagem orientada a objetos Java para o desenvolvimento e a IDE NetBeans.
 
