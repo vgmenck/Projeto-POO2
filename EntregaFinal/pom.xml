@@ -10,4 +10,5 @@
         <maven.compiler.target>18</maven.compiler.target>
         <exec.mainClass>com.mycompany.entregafinal.EntregaFinal</exec.mainClass>
     </properties>
+    <name>EntregaFinalPOO2</name>
 </project>
