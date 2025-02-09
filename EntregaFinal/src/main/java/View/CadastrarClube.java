@@ -6,6 +6,7 @@ package View;
 import Model.ClubeException;
 import Model.Clube;
 import Controller.Banco;
+import Model.Atleta;
 import javax.swing.JOptionPane;
 
 public class CadastrarClube extends javax.swing.JFrame {
@@ -220,15 +221,24 @@ public class CadastrarClube extends javax.swing.JFrame {
         c.setCidade(cxCidade.getText());
         
         if(verif1 && verif2){
+        int qtdAtletas = Integer.parseInt(JOptionPane.showInputDialog("Quantos atletas deseja cadastrar?"));
+
+        for (int i = 0; i < qtdAtletas; i++) {
+            CadastrarAtleta.getCadastrarAtleta().setVisible(true);
+        }
+        
+        if(verif1 && verif2){
             c = Banco.getBanco().cadastraClube(c);
             if(c!=null){
                 JOptionPane.showMessageDialog(null,"CADASTRO CONCLUIDO","CADASTRO DE CLUBE",1);
             } else {
                 JOptionPane.showMessageDialog(null,"ESSE CLUBE JA EXISTE","CADASTRO DE CLUBE",4);
+            }
         }
-        }
-     
+        
+       
     }    
+    }
 
     public void limpar(){
         cxNomeTime.setText("");

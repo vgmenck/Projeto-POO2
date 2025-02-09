@@ -15,17 +15,16 @@ public class Clube{
     private int qtdTitulos;
     private String estado;
     private String cidade;
-    private Atleta atleta;
     private List<Atleta> atletas;
 
 
-    public Clube(){
-        String nomeTime = "";
-        int fundacao = 0;
-        int conquistas = 0;
-        String estado = "";
-        String cidade = "";
-        atletas = new ArrayList<Atleta>();
+    public Clube() {
+        this.nomeTime = "";
+        this.fundacao = 0;
+        this.qtdTitulos = 0;
+        this.estado = "";
+        this.cidade = "";
+        this.atletas = new ArrayList<>();
     }
 
     public String getNomeTime(){
@@ -48,8 +47,8 @@ public class Clube{
         return cidade;
     }
 
-    public Atleta getAtleta(){
-        return atleta;
+    public List<Atleta> getAtletas() {
+        return atletas;
     }
 
     public final void setNomeTime(String nomeTime){
@@ -77,16 +76,12 @@ public class Clube{
         this.cidade = cidade;
     }
 
-    public final void setAtleta(Atleta atleta){
-        this.atleta = atleta;
-    }
-
     public void setAtletas(List<Atleta> atletas) {
-        this.atletas = atletas;
-    }
-
-    public List<Atleta> getAtletas() {
-        return atletas;
+        if (atletas != null) {
+            this.atletas = atletas;
+        } else {
+            this.atletas = new ArrayList<>();
+        }
     }
 
 }

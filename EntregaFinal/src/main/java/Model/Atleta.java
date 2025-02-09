@@ -12,13 +12,14 @@ public class Atleta{
     private int assistencias;
 
     public Atleta(){
-        String nomeAtleta = "";
-        String posicao = "";
-        int idadeAtleta = 0;
-        int gols = 0;
-        int assistencias = 0;
+        this.nomeAtleta = "";
+        this.posicao = "";
+        this.idadeAtleta = 0;
+        this.gols = 0;
+        this.assistencias = 0;
     }
 
+    
     //sobrecarga
     public Atleta(String nomeAtleta, String posicao, int idadeAtleta, int gols, int assistencias ){
         this.nomeAtleta = nomeAtleta;
